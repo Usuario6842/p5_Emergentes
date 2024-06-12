@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    color-scheme: dark;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+    
+
+    h2 {
+        font-size: 1.9em;
+        text-align: center;
+        color: #CDC6CC;
+    }
+
+    form {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        
+        fieldset{
+            border: 2px solid #1D9AB8;
+            padding: 1rem 1rem 1.5rem;
+            legend{
+                color: #CDC6CC;
+            }
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #CDC6CC;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        input[type="date"] {
+            -webkit-appearance: none; 
+        }
+        
+        input{
+            transition: all .3s ease;
+            border: 2px solid #206576;
+            outline: none;
+            color: #CDC6CC;
+        }
+        
+        input:focus {
+            border: 2px solid #1D9AB8;
+            
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 2rem;
+            padding: 2rem 0 0;
+            
+            .button_a{
+                padding: .5rem 1rem;
+                font-size: 1em;
+                svg{
+                    width: 2rem;
+                    height: 2rem;
+                    color: #1D9AB8;
+                    font-weight: bold;
+                }
+            }
+            
+            .button_b{
+                padding: .5rem 1rem;
+                font-size: 1em;
+                cursor: pointer;
+                background-color: #000;
+                color: #1D9AB8;
+                border: 2px solid  #1D9AB8;
+                border-radius: 10px;
+                transition: al .3s ease;
+                
+                &:hover{
+                    border-color: #000;
+                    background-color: #1D9AB8;
+                    color: #000;
+                }
+            }
+            
+
+        }
+    }
+
+
+}
